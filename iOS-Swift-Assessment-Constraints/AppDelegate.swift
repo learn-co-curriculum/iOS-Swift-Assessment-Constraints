@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  iOS-Swift-Assessment-ViewsInCode
+//  iOS-Swift-Assessment-Constraints
 //
-//  Created by Flatiron School on 7/29/16.
+//  Created by Flatiron School on 8/19/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
