@@ -10,8 +10,24 @@ import UIKit
 
 class ViewsInCodeViewController: UIViewController {
 
+    @IBOutlet weak var myGreenBox: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myBoxConstraints()
+    }
+    
+    func myBoxConstraints()  {
+        
+        view.removeConstraints(view.constraints)
+        myGreenBox.translatesAutoresizingMaskIntoConstraints = false
+        
+        myGreenBox.heightAnchor.constraintEqualToAnchor(view.heightAnchor, multiplier: 0.5).active = true
+        myGreenBox.topAnchor.constraintEqualToAnchor(view.topAnchor, constant: 20).active = true
+        myGreenBox.leftAnchor.constraintEqualToAnchor(view.leftAnchor, constant: 20).active = true
+        myGreenBox.rightAnchor.constraintEqualToAnchor(view.rightAnchor, constant: -20).active = true
+        
     }
 
     /*
